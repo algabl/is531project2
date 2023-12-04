@@ -77,11 +77,14 @@ WSGI_APPLICATION = 'is531project2.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'project2-database',
+        'USER': 'admin',
+        'PASSWORD': 'couchmouse12',
+        'HOST': 'project2-database.cw74abq9hls6.us-east-2.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
