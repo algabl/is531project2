@@ -1,3 +1,4 @@
 Django==3.2.4
+pymysql==1.0.2  # Use the latest version available
 # Add other dependencies as needed
 

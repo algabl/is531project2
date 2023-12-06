@@ -10,6 +10,15 @@
     Explore the world of mousepads and find the perfect one for your needs.
   </p>
 
+  <h2>Featured Mousepads:</h2>
+
+  {% for mousepad in mousepad_list %}
+    <div class="mousepad-entry">
+      <img src="{{ mousepad.image }}" alt="{{ mousepad.name }}">
+      <p>{{ mousepad.name }}</p>
+    </div>
+  {% endfor %}
+
   <h2>Quick Links:</h2>
   <a href="{% url 'home' %}">
     Browse Our Latest Mousepad Collection
