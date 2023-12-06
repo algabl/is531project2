@@ -12,12 +12,12 @@
 
   <h2>Featured Mousepads:</h2>
 
-  {% comment %} {% for mousepad in mousepad_list %}
+  {% for mousepad in mousepad_list %}
     <div class="mousepad-entry">
       <img src="{{ mousepad.image }}" alt="{{ mousepad.name }}">
       <p>{{ mousepad.name }}</p>
     </div>
-  {% endfor %} {% endcomment %}
+  {% endfor %}
 
   <h2>Quick Links:</h2>
   <a href="{% url 'home' %}">
